@@ -10,10 +10,13 @@
             <p>{{ user }}</p>
         </div>
     </div>
+    <global-component/>
 </template>
 
 <script>
+import GlobalComponent from './GlobalComponent.vue';
 export default {
+  components: { GlobalComponent },
     props:{
         proItem :{
             type :Object,
