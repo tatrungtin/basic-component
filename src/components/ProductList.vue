@@ -5,7 +5,7 @@
             <ProductItem 
                 :proItem= "proItem"
                  multipleType="Tin ta"
-                 @custom-handle-select="handleSelect"
+                 @custom-handle-select="handleSelect(proItem)"
             />
         </div>
     </div>

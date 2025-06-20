@@ -7,6 +7,7 @@
             <button class="btn btn-info"
                 @click="handleSelect(proItem)"
             >Chọn</button>
+            <p>{{ user }}</p>
         </div>
     </div>
 </template>
@@ -39,7 +40,8 @@ export default {
         handleSelect(proItem){
             this.$emit("customHandleSelect", proItem)
         }
-    }
+    },
+    inject :["user"]
 
 }
 </script>

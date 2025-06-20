@@ -19,7 +19,12 @@ export default {
     FirstComponent,
     SecondComponent,
     ProductList
-  }
+  },
+  provide(){
+    return {
+      user:"ta trung tin"
+    }
+  },
 }
 </script>
 
