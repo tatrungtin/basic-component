@@ -4,6 +4,19 @@
   <FirstComponent />
   <SecondComponent />
   <ProductList/>
+  <hr>
+  <br><br>
+  <DemoSlots>
+    <template v-slot:header>
+      <h1>Header</h1>
+    </template>
+    <template v-slot:footer>
+      <h1>Footer</h1>
+    </template>
+    <template v-slot:default>
+      <h1>default</h1>
+    </template>
+  </DemoSlots>
 </template>
 
 <script>
@@ -11,6 +24,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import FirstComponent from './components/FirstComponent.vue';
 import SecondComponent from './components/SecondComponent.vue';
 import ProductList from './components/ProductList.vue';
+import DemoSlots from './components/DemoSlots.vue';
 
 export default {
   name: 'App',
@@ -18,7 +32,8 @@ export default {
     HelloWorld,
     FirstComponent,
     SecondComponent,
-    ProductList
+    ProductList,
+    DemoSlots
   },
   provide(){
     return {
